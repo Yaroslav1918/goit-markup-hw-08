@@ -1,0 +1,30 @@
+.preference-list {
+  display: flex;
+}
+
+.preference-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+.preference-list__box {
+  width: 270px;
+  height: 120px;
+  border-radius: 10px;
+  background-color: var(--gray-color);
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.preference-list__title {
+font-weight: bold;
+font-size: 14px;
+line-height: 1.1;
+text-transform: uppercase;
+margin-bottom: 10px;
+}
+
+.preference-list__text {
+font-size: 14px;
+line-height: 1.7;
+color: var(--secondary-color);
+letter-spacing: 0.03em;
+}

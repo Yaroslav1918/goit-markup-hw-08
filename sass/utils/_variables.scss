@@ -1,0 +1,27 @@
+:root {
+  --font-family: Roboto, sans-serif;
+  --main-color: #212121;
+  --secondary-color: #757575;
+  --accent-color: #2196F3;
+  --hero-color: #FFFFFF;
+  --address-color:rgba(255, 255, 255, 0.6);
+  --black-color:#2F303A;  
+  --gray-color: #F5F4FA;
+  --portfolio-border: #EEEEEE;
+  --box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --border-header: #ECECEC;
+  --icon-color:#AFB1B8;
+  --linear-gradient:rgba(47, 48, 58, 0.4);
+  --box-shadow-portfolio: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  --icon-back-footer: rgba(255, 255, 255, 0.1);
+  --duration: 250ms;
+  --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+  --back-img-text: rgba(47, 48, 58, 0.8);
+  --back-overlay: rgba(33, 150, 243, 0.9);
+  --color-close-button:rgba(0, 0, 0, 0.1);
+  --color-border-input: rgba(255, 255, 255, 0.3);
+  --drop-shadow-input: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  --border-modal-input: rgba(33, 33, 33, 0.2);
+  --placeholder: rgba(117, 117, 117, 0.5);
+  --box-shadow-submit: box-shadow 0px 4px 4px rgba(0, 0, 0, 0.15);
+}

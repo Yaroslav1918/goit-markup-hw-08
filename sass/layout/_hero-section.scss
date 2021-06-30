@@ -1,0 +1,32 @@
+.hero-section {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--secondary-color);
+  background-image: linear-gradient(
+    to right,
+    var(--linear-gradient),
+    var(--linear-gradient)
+  ),
+  url("../images/hero.jpg");
+  background-repeat: no-repeat;
+  background-position:center ;
+  background-size: cover;
+  padding: 200px 0;
+}
+
+.hero-section__hero-text {
+font-style: normal;
+font-weight: 900;
+font-size: 44px;
+color: var(--hero-color);
+text-transform: uppercase;
+margin-bottom: 30px;
+text-align: center;
+white-space: pre-wrap;
+}
+
+.hero-section__box-button {
+  text-align: center;
+}

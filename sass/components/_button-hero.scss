@@ -1,0 +1,40 @@
+
+.button-hero {
+font-weight: bold;
+line-height: 1.8;
+color: var(--hero-color);
+min-width: 200px;
+padding: 10px 32px;
+background-color: var(--accent-color);
+}
+
+// footer-studio
+.button-hero--box-shadow {
+  @extend %centered-flex;
+    padding: 10px 10px 10px 29px;
+    transition: box-shadow var(--duration) var(--cubic-bezier);
+    &:hover,
+    &:focus {
+  box-shadow: var(--box-shadow-submit);
+}
+}
+
+
+
+.button-hero__icon {
+  margin-left: 10px;
+}
+
+/* Form  modal*/
+  
+
+.button-hero--background-accent {
+  padding: 10px 55px 10px 56px;
+ transition: box-shadow var(--duration) var(--cubic-bezier),
+ background var(--duration) var(--cubic-bezier);
+&:focus,
+&:hover {
+box-shadow: var(--box-shadow-submit);
+background: #188CE8;
+}
+}

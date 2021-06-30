@@ -1,0 +1,37 @@
+.filter-list {
+  @extend %centered-flex;
+
+
+&--margin-bottom {
+margin-bottom: 50px;
+}
+}
+
+.filter-list__item:not(:last-child) {
+ margin-right: 8px;
+  }
+
+.filter-list__button {
+color: var(--main-color);
+min-width: 128px;
+transition: color var(--duration) var(--cubic-bezier),
+background-color var(--duration) var(--cubic-bezier),
+box-shadow var(--duration) var(--cubic-bezier);
+&:hover,
+&:focus {
+  color: var(--hero-color);
+  background-color: var(--accent-color);
+  box-shadow: var(--box-shadow-portfolio);
+}
+&--color-accent {
+color: var(--hero-color);
+min-width: 73px;
+background-color: var(--accent-color);
+}
+
+}
+
+
+
+
+
