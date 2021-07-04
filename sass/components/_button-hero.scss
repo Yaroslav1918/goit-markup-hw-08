@@ -10,7 +10,9 @@ background-color: var(--accent-color);
 
 // footer-studio
 .button-hero--box-shadow {
-  @extend %centered-flex;
+  display: inline-flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px 10px 10px 29px;
     transition: box-shadow var(--duration) var(--cubic-bezier);
     &:hover,
