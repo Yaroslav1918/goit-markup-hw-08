@@ -1,6 +1,5 @@
 .hero-section {
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background: var(--secondary-color);
@@ -9,22 +8,83 @@
     var(--linear-gradient),
     var(--linear-gradient)
   ),
-  url("../images/hero.jpg");
+  url("/images/hero-mob1x.jpg");
+   background-size: 480px;
   background-repeat: no-repeat;
   background-position:center ;
-  background-size: cover;
-  padding: 200px 0;
-}
+ 
+  
+  @media (min-device-pixel-ratio: 2) and (min-width: 480px),
+    (min-resolution: 192dpi) and (min-width: 480px),
+    (min-resolution: 2dppx) and (min-width: 480px) {
+    background-image: linear-gradient(
+    to right,
+    var(--linear-gradient),
+    var(--linear-gradient)
+  ),
+      url("../images/hero-mob2x.jpg");
+  }
 
+   @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+    to right,
+    var(--linear-gradient),
+    var(--linear-gradient)
+  ),
+      url("../images/hero-tab1x.jpg");
+    background-size: 768px;
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: linear-gradient(
+    to right,
+    var(--linear-gradient),
+    var(--linear-gradient)
+  ),
+      url("../images/hero-tab2x.jpg");
+    background-size: 768px;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+    to right,
+    var(--linear-gradient),
+    var(--linear-gradient)
+  ),
+      url("../images/hero-com1x.jpg");
+    background-size: 1600px;
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    (min-resolution: 192dpi) and (min-width: 1200px),
+    (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: linear-gradient(
+    to right,
+    var(--linear-gradient),
+    var(--linear-gradient)
+  ),
+      url("../images/hero-com2x.jpg");
+    background-size: 1600px;
+  }
+
+}
+//  
 .hero-section__hero-text {
-font-style: normal;
 font-weight: 900;
-font-size: 44px;
+font-size: 26px;
+line-height: 1.61;
 color: var(--hero-color);
 text-transform: uppercase;
-margin-bottom: 30px;
 text-align: center;
 white-space: pre-wrap;
+margin-bottom: 30px;
+   @media screen and (min-width: 1200px) {
+font-size: 44px;
+line-height: 1.36;
+    } 
+  
 }
 
 .hero-section__box-button {

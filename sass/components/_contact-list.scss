@@ -1,5 +1,7 @@
 .contact-list  {
+  display: none;
   @extend %centered-flex;
+  
 
 
 &--margin-end {

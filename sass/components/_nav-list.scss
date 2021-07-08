@@ -1,8 +1,10 @@
 .nav-list {
+  display: none;
   @extend %centered-flex;
 }
 .contact-list__link,
  .nav-list__link {
+
 @extend %centered-flex;
 font-weight: 500;
 font-size: 14px;
@@ -43,6 +45,13 @@ transition: color var(--duration) var(--cubic-bezier);
   margin-right: 93px;
 }
 }
+
+.nav-container {
+display: flex;
+justify-content:space-between;
+align-items: center;
+}
+
 
 
 

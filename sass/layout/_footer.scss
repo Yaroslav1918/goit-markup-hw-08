@@ -32,7 +32,11 @@ font-style: inherit;
 font-size: 14px;
 line-height: 1.7;
 margin-top: 20px;
-}
+
+@media screen and (min-width: 1200px) {
+     align-items: flex-start;  } 
+  }
+
 .footer__text-address{
  
 margin-bottom: 8px;
