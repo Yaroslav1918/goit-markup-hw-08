@@ -5,9 +5,12 @@
 .form-modal__text {
 font-weight: bold;
 font-size: 20px;
-line-height: 1.15;
+line-height: 1.5;
 margin-bottom: 12px;
-}
+@media screen and (min-width: 1200px) {  
+  line-height: 1.15;  } 
+  }
+
 
 .form-modal__label {
 position: relative;
