@@ -1390,15 +1390,13 @@ body {
   transition: opacity var(--duration) var(--cubic-bezier);
 }
 
-.mobile-nav .container-mobile {
+.mobile-nav .container {
   position: relative;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 40px;
+  padding: 48px 40px 48px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vw;
+  height: 100vh;
 }
 
 .mobile-nav .menu-close {

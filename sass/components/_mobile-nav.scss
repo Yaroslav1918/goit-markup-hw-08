@@ -1,3 +1,4 @@
+
 .mobile-nav {
     position: fixed;
     top: 0;
@@ -9,15 +10,13 @@
      transition: opacity var(--duration) var(--cubic-bezier);
 
     
-    .container-mobile {
+    .container {
         position: relative;
-        padding-top: 48px;
-        padding-bottom: 48px;
-        padding-left: 40px;
+       padding: 48px 40px 48px 40px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 100vw;
+        height: 100vh;
     }
     .menu-close {
     position: absolute;
