@@ -404,7 +404,7 @@ body {
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
@@ -527,7 +527,7 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--main-color);
-  padding-top: 32px;
+  padding-top: 40px;
   padding-bottom: 32px;
   transition: color var(--duration) var(--cubic-bezier);
 }
@@ -551,7 +551,7 @@ body {
   background: var(--accent-color);
   border-radius: 2px;
   position: absolute;
-  bottom: -5%;
+  bottom: 0%;
 }
 
 @media screen and (min-width: 1200px) {
@@ -619,6 +619,14 @@ body {
   }
 }
 
+.contact-list__link--padding-top {
+  padding-top: 23px;
+}
+
+.contact-list__link--padding-bottom {
+  padding-bottom: 22px;
+}
+
 .contact-list__item:not(:last-child) {
   margin-bottom: 12px;
 }
@@ -633,14 +641,6 @@ body {
 .contact-list__icon {
   margin-right: 8px;
   fill: currentColor;
-}
-
-.contact-list__link--secondary-color {
-  color: var(--secondary-color);
-}
-
-.contact-list__link--secondary-color:hover, .contact-list__link--secondary-color:focus {
-  color: var(--accent-color);
 }
 
 .hero-section {
@@ -790,6 +790,7 @@ body {
 @media screen and (min-width: 1200px) {
   .preference-list__box {
     width: 270px;
+    height: 120px;
   }
 }
 
@@ -831,18 +832,18 @@ body {
   margin-right: 30px;
 }
 
+.product-section__box {
+  height: 70px;
+  background: var(--back-img-text);
+}
+
 .product-section__text {
-  position: absolute;
-  right: 0%;
-  bottom: 0%;
-  width: 100%;
   padding: 27px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--hero-color);
-  background: var(--back-img-text);
 }
 
 .subtitle {
@@ -1204,8 +1205,9 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity var(--duration) var(--cubic-bezier);
 }
@@ -1221,9 +1223,9 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 450px;
-  height: 609px;
-  overflow-y: scroll;
+  max-width: 450px;
+  max-height: 609px;
+  padding: 40px;
   margin: 0 auto;
   background-color: var(--hero-color);
   box-shadow: var(--box-shadow);
@@ -1231,15 +1233,28 @@ body {
   transition: transform var(--duration) var(--cubic-bezier);
 }
 
+@media screen and (max-width: 479px) {
+  .backdrop__modal {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .backdrop__modal {
-    width: 528px;
-    height: 581px;
+    max-width: 528px;
+    max-height: 581px;
   }
 }
 
 .backdrop--is-hidden .backdrop__modal {
   transform: translate(-50%, -50%) scale(0);
+}
+
+@media screen and (max-width: 767px) {
+  .backdrop--is-hidden .backdrop__modal {
+    padding: 93px 15px 94px;
+  }
 }
 
 .backdrop__button {
@@ -1261,15 +1276,20 @@ body {
 }
 
 .form-modal {
-  padding: 40px 39px 40px 41px;
   text-align: center;
 }
 
 .form-modal__text {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 1.5;
-  margin-bottom: 12px;
+}
+
+@media screen and (min-width: 480px) {
+  .form-modal__text {
+    margin-bottom: 12px;
+    font-size: 20px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1327,10 +1347,16 @@ body {
   margin-bottom: 20px;
   resize: none;
   width: 100%;
-  height: 120px;
+  height: 40px;
   border: 1px solid var(--border-modal-input);
   border-radius: 4px;
   transition: border var(--duration) var(--cubic-bezier);
+}
+
+@media screen and (min-width: 480px) {
+  .form-modal__textarea {
+    height: 120px;
+  }
 }
 
 .form-modal__textarea::placeholder {
@@ -1392,6 +1418,7 @@ body {
 
 .mobile-nav .container {
   position: relative;
+  max-width: 767px;
   padding: 48px 40px 48px 40px;
   display: flex;
   flex-direction: column;
@@ -1406,9 +1433,9 @@ body {
 }
 
 .menu-open, .menu-close {
+  padding: 0;
   width: 40px;
   height: 40px;
-  padding: 0;
   cursor: pointer;
   background-color: var(--hero-color);
   transition: fill var(--duration) var(--cubic-bezier);
@@ -1460,6 +1487,12 @@ body {
   color: var(--accent-color);
 }
 
+@media screen and (max-width: 480px) {
+  .mobile-contacts__link--accent-color {
+    font-size: 30px;
+  }
+}
+
 .mobile-social__link {
   font-weight: 500;
   font-size: 18px;
@@ -1476,5 +1509,6 @@ body {
 
 .mobile-social {
   display: flex;
+  flex-wrap: wrap;
 }
 /*# sourceMappingURL=main.css.map */

@@ -16,17 +16,18 @@
   margin-right: 30px;
 }
 }
+.product-section__box {
+  height: 70px;
+
+background: var(--back-img-text);
+}
 .product-section__text {
-position: absolute;
-right: 0%;
-bottom: 0%;
-@extend %centered-flex;
-width: 100%;
+  @extend %centered-flex;
 padding: 27px;
 font-weight: bold;
 font-size: 14px;
 line-height: 1.14;
 text-transform: uppercase;
 color: var(--hero-color);
-background: var(--back-img-text);
+
 }

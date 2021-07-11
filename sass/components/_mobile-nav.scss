@@ -12,6 +12,7 @@
     
     .container {
         position: relative;
+        max-width: 767px;
        padding: 48px 40px 48px 40px;
         display: flex;
         flex-direction: column;
@@ -28,9 +29,9 @@
 }
 
 .menu-open, .menu-close {
-  width: 40px;
-height: 40px;
 padding: 0;
+width: 40px;
+ height: 40px;
 cursor: pointer;
 background-color: var(--hero-color);
 transition: fill var(--duration) var(--cubic-bezier);
@@ -43,6 +44,7 @@ transition: fill var(--duration) var(--cubic-bezier);
 display: none;
   } 
 }
+
 
 
 
@@ -80,6 +82,9 @@ font-size: 34px;
 line-height: 1.17;
 letter-spacing: 0.02em;
 color: var(--accent-color);
+@media screen and (max-width: 480px) { 
+    font-size: 30px;
+      }  
 }
 
 .mobile-social__link {
@@ -99,5 +104,6 @@ color: var(--accent-color);
 
 .mobile-social {
     display: flex;
-
+    flex-wrap: wrap;
+    
 }

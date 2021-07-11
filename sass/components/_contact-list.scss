@@ -16,6 +16,7 @@ display: flex;
 font-weight: 500;
 font-size: 12px;
 line-height: 1.17;
+
 letter-spacing: 0.02em;
 text-decoration: none;
 color: var(--secondary-color);
@@ -31,6 +32,13 @@ padding-top: 32px;
 padding-bottom: 32px;
 }
  }
+.contact-list__link--padding-top {
+  padding-top: 23px;
+}
+.contact-list__link--padding-bottom {
+  padding-bottom: 22px;
+}
+
 
 .contact-list__item:not(:last-child) {
   margin-bottom: 12px;
@@ -47,15 +55,5 @@ padding-bottom: 32px;
   margin-right: 8px;
   fill: currentColor;
  }
-
-
- .contact-list__link--secondary-color {
-color: var(--secondary-color);
-
-&:hover,
-&:focus {
-  color: var(--accent-color);
-}
-}
 
 
