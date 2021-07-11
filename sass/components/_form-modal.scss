@@ -38,7 +38,11 @@ fill: var(--accent-color);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  @media screen and (min-width: 480px)
+ {
+   margin-bottom: 30px;
+}
 }
 
 .form-modal__span {
