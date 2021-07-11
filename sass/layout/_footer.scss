@@ -21,6 +21,9 @@ margin-bottom: 60px;
      display: flex;
     align-items: baseline;
     flex-wrap: wrap;
+   justify-content: space-around;   } 
+   @media screen and (min-width: 1200px) {   
+     
    justify-content: space-between;   } 
 
 }

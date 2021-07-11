@@ -2,6 +2,8 @@
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background: var(--secondary-color);
   background-image: linear-gradient(
     to right,
@@ -9,9 +11,9 @@
     var(--linear-gradient)
   ),
   url("../images/hero-mob1x.jpg");
-   background-size: 480px;
   background-repeat: no-repeat;
   background-position:center ;
+  background-size: cover;
  
   
   @media (min-device-pixel-ratio: 2) and (min-width: 480px),
@@ -32,7 +34,7 @@
     var(--linear-gradient)
   ),
       url("../images/hero-tab1x.jpg");
-    background-size: 768px;
+    
   }
   @media (min-device-pixel-ratio: 2) and (min-width: 768px),
     (min-resolution: 192dpi) and (min-width: 768px),
@@ -43,7 +45,7 @@
     var(--linear-gradient)
   ),
       url("../images/hero-tab2x.jpg");
-    background-size: 768px;
+   
   }
   
   @media screen and (min-width: 1200px) {
@@ -55,7 +57,7 @@
     var(--linear-gradient)
   ),
       url("../images/hero-com1x.jpg");
-    background-size: 1600px;
+    
   }
   @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
     (min-resolution: 192dpi) and (min-width: 1200px),
@@ -66,7 +68,7 @@
     var(--linear-gradient)
   ),
       url("../images/hero-com2x.jpg");
-    background-size: 1600px;
+ 
   }
 
 
@@ -92,3 +94,20 @@ line-height: 1.36;
 .hero-section__box-button {
   text-align: center;
 }
+
+
+
+
+.hero {
+    max-width: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    margin: 0 auto;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-size: cover;
+}
+
+

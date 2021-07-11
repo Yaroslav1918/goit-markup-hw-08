@@ -29,9 +29,9 @@
 }
 
 .menu-open, .menu-close {
-padding: 0;
 width: 40px;
  height: 40px;
+ padding: 0;
 cursor: pointer;
 background-color: var(--hero-color);
 transition: fill var(--duration) var(--cubic-bezier);
